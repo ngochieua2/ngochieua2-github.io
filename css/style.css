@@ -43,9 +43,13 @@ body {
 }
 
 .sectionContents {
-    margin: 100px 0px 0px 500px;
+    margin-bottom: 50px;
+    margin-left: 500px;
+    padding-top: 50px;
+    padding-bottom: 50px;
     height: auto;
-    width: 700px;
+    width: 55vw;
+    background-color: chartreuse;
 }
 
 .sectionContents h1{
@@ -56,10 +60,19 @@ body {
     font-size: 35px;
 }
 
-.sectionContents p{
+.sectionContents h3 {
+    font-size: 23px;
+    margin: 0px;
+}
+
+.sectionContents p, li{
     font-size: 19px;
 }
 
-.sectionContents p:first-of-type{
-    margin-top: 90px;
+#about .sectionContents p:first-of-type{
+    margin-top: 60px;
+}
+
+#contact {
+    padding-bottom: 200px;
 }
