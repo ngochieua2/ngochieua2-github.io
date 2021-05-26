@@ -10,8 +10,10 @@
 </head>
 <body>
     <div id="container">
+
         <!-- sidebar -->
         <div id="sideBar">
+            <div class="closeButton" onclick="closeNav()">&times;</div>
             <aside id="aside">
                 <div class="picture">picture here</div>
                 <h1 class="sideName">Ngoc Hieu Nguyen</h1>
@@ -23,11 +25,12 @@
                         <li><a href="#contact">Contact</a></li>
                     </ul>
                 </nav>
-            </aside>
+            </aside>  
         </div>
+        <div class="openButton" onclick="openNav()"><i class="fa fa-bars fa-3x"></i></div>
         
         <!-- contents parts -->
-        <main>
+        <main id="main">
             <section id="about">
                 <div class="sectionContents">
                     <h1>Ngoc Hieu Nguyen</h1>

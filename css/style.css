@@ -15,11 +15,36 @@ body {
     position: fixed;
     top: 0;
     left: 6.5vw;
+    z-index: 1;
+}
+
+.openButton {
+    position: fixed;
+    top: 3vw;
+    left: 3vw;
+    display: none;
+}
+
+.openButton:hover {
+    cursor: pointer;
+}
+
+.closeButton {
+    position: absolute;
+    font-size: 50px;
+    right: 20px;
+    display: none;
+}
+
+.closeButton:hover {
+    cursor: pointer;
 }
 
 #aside{
     text-align: center;
     margin-top: 80px;
+    display: block;
+    transition: 0.3s;
 }
 
 .picture{
@@ -42,6 +67,11 @@ body {
     margin-bottom: 12px;
 }
 
+#main {
+    transition: margin-left .5s; 
+    padding: 20px;
+}
+
 .sectionContents {
     margin-bottom: 50px;
     margin-left: 500px;
@@ -49,6 +79,7 @@ body {
     padding-bottom: 50px;
     height: auto;
     width: 55vw;
+    
 }
 
 .sectionContents h1{
@@ -108,4 +139,49 @@ a:hover {
 
 #footer a {
     color: black;
+}
+
+@media only screen and (max-width: 1200px){
+    .sectionContents {
+        margin-left: 42vw;
+    }
+
+    #footer {
+        margin-left: 42vw;
+    }
+}
+
+@media only screen and (max-width: 1024px){
+    #sideBar {
+        left: 0px;
+    }
+    .sectionContents{
+        margin-left: 45vw;
+    }
+
+}
+
+@media only screen and (max-width: 768px){
+    #sideBar {
+        width: 0px;
+        overflow-x: hidden;
+        transition: 0.5s;
+
+    }
+
+    .closeButton {
+        display: block;
+    }
+
+    .openButton {
+        display: block;
+    }
+
+    .sectionContents{
+        margin: 0px auto;
+    }
+
+    #footer {
+        margin: 0px auto;
+    }
 }

@@ -13,3 +13,16 @@ jQuery(document).ready(function($){
     });
  
 })
+
+//responsive narBar
+function openNav() {    
+    $('#sideBar').css('width', '300px');
+    $('#main').css('marginLeft', '300px');
+    $('#footer').css('marginLeft', '300px');
+  }
+  
+function closeNav() {
+    $('#sideBar').css('width', '0');
+    $('#main').css('marginLeft', '0');
+    $('#footer').css('marginLeft', 'auto');
+  }
