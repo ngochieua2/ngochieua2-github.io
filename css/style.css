@@ -1,6 +1,6 @@
 body {
     margin: 0%;
-    background-color: #f1faee;
+    background-color: #fdf3f3;
 }
 
 #container {
@@ -49,7 +49,6 @@ body {
     padding-bottom: 50px;
     height: auto;
     width: 55vw;
-    background-color: chartreuse;
 }
 
 .sectionContents h1{
@@ -74,5 +73,39 @@ body {
 }
 
 #contact {
-    padding-bottom: 200px;
+    padding-bottom: 100px;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(0, 0, 255);
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+#footer {
+    margin-left: 500px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    height: auto;
+    width: 55vw;
+    background-color: #caffbf;
+    font-size: 19px;
+}
+
+#footer div {
+    margin: 0, auto;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+#footer div:first-of-type {
+    padding-bottom: 30px;
+}
+
+#footer a {
+    color: black;
 }
